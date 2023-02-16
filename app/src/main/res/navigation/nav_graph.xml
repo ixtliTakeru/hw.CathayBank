@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="g.takeru.homework.cathaybank.main.arealist.AreaListFragment"
+        android:label="台北市立動物園"
+        tools:layout="@layout/fragment_area_list">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" >
+            <argument
+                android:name="areaNo"
+                android:defaultValue=""/>
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="g.takeru.homework.cathaybank.main.areadetail.AreaDetailFragment"
+        android:label="SecondFragment"
+        tools:layout="@layout/fragment_area_detail">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" >
+
+            <argument
+                android:name="plantId"
+                app:argType="integer"
+                android:defaultValue="0"/>
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="g.takeru.homework.cathaybank.main.plantdetail.PlantDetailFragment"
+        android:label="ThirdFragment"
+        tools:layout="@layout/fragment_plant_detail">
+    </fragment>
+</navigation>
