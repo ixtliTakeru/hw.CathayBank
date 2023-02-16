@@ -9,8 +9,7 @@ import kotlinx.coroutines.CoroutineDispatcher
 
 interface MainRepository {
     suspend fun getAreaList(): ApiResult<AreaResult>
-    suspend fun getPlantList(): ApiResult<PlantResult>
-}
+    suspend fun getPlantList(): ApiResult<PlantResult> }
 
 class MainRepositoryImpl constructor(private val dispatcher: CoroutineDispatcher) :
     MainRepository {

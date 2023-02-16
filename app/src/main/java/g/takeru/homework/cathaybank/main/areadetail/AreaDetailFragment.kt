@@ -16,7 +16,6 @@ import g.takeru.homework.cathaybank.main.MainRepositoryImpl
 import g.takeru.homework.cathaybank.main.MainViewModel
 import g.takeru.homework.cathaybank.main.MainViewModelFactory
 import kotlinx.coroutines.Dispatchers
-import timber.log.Timber
 
 class AreaDetailFragment : Fragment() {
 
@@ -88,7 +87,6 @@ class AreaDetailFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 
     private fun setupRecyclerView() {
         binding.apply {

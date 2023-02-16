@@ -24,13 +24,10 @@ package g.takeru.homework.cathaybank.datamodel
 //    },
 
 data class AreaResult(
-    val result: AreaResults
-) {
-}
+    val result: AreaResults)
 
 data class AreaResults(
-    val results: List<Area>) {
-}
+    val results: List<Area>)
 
 data class Area(
     val e_no: String = "",
@@ -39,5 +36,4 @@ data class Area(
     val e_pic_url: String = "",
     val e_info: String = "",
     val e_memo: String = "",
-    val e_url: String = "") {
-}
+    val e_url: String = "")

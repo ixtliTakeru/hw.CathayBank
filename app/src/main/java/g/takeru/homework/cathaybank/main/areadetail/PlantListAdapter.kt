@@ -14,8 +14,7 @@ import g.takeru.homework.cathaybank.main.arealist.AdapterHolderClickListener
 import g.takeru.homework.cathaybank.utils.toHttps
 
 class PlantListAdapter (private val area: Area?,
-                        private val holderListener: AdapterHolderClickListener<Plant>
-)
+                        private val holderListener: AdapterHolderClickListener<Plant>)
     : RecyclerView.Adapter<ViewHolder>() {
 
     companion object {
@@ -65,6 +64,7 @@ class PlantListAdapter (private val area: Area?,
             holder as PlantHolder
             holder.binding.apply {
                 plantImage.load(plant.F_Pic01_URL.toHttps())
+                // Unable to parse F_Name_Ch(Plant api) for Plant class due to encoding issue
                 plantName.text = plant.F_Name_Ch
                 plantDesc.text = plant.F_AlsoKnown
             }
@@ -72,9 +72,10 @@ class PlantListAdapter (private val area: Area?,
         }
     }
 
-    override fun getItemCount(): Int = plantList.size + 1
+    override fun getItemCount(): Int =
+        plantList.size + 1
 
-    override fun getItemViewType(position: Int): Int {
-        return if (position == 0) TYPE_HEADER else TYPE_ITEM
-    }
+    override fun getItemViewType(position: Int): Int =
+        if (position == 0) TYPE_HEADER else TYPE_ITEM
+
 }

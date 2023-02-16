@@ -47,13 +47,10 @@ package g.takeru.homework.cathaybank.datamodel
 
 
 data class PlantResult(
-    val result: PlantResults
-) {
-}
+    val result: PlantResults)
 
 data class PlantResults(
-    val results: List<Plant>) {
-}
+    val results: List<Plant>)
 
 data class Plant(
     val _id: Int,
@@ -65,5 +62,4 @@ data class Plant(
     val F_Brief: String = "",
     val F_Feature: String = "",
     val F_Pic01_ALT: String = "",
-    val F_Pic01_URL: String = "") {
-}
+    val F_Pic01_URL: String = "")

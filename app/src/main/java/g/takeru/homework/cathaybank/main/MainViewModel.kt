@@ -12,8 +12,7 @@ import timber.log.Timber
 
 class MainViewModel(application: Application,
                     private val repository: MainRepository
-)
-    : AndroidViewModel(application) {
+) : AndroidViewModel(application) {
 
     private val _areaList = MutableLiveData<List<Area>>()
     val areaList: LiveData<List<Area>> = _areaList

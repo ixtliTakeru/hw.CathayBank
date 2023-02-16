@@ -52,8 +52,6 @@ class PlantDetailFragment : Fragment() {
         binding.apply {
             plant?.let {
                 plantImg.load(plant.F_Pic01_URL.toHttps())
-
-
                 plantDesc.text = getDesc(plant)
             }
         }
