@@ -19,7 +19,7 @@ This is a Android app for Cathay Bank interview
 - Unable to parse F_Name_Ch(Plant api) for Plant class due to encoding issue
 
 **Screenshots**:
-- [Area list](https://github.com/ixtliTakeru/hw.CathayBank/blob/master/screenshots/Screenshot_20230217_235125.png)
+- [Area List](https://github.com/ixtliTakeru/hw.CathayBank/blob/master/screenshots/Screenshot_20230217_235125.png)
 - [Area Detail](https://github.com/ixtliTakeru/hw.CathayBank/blob/master/screenshots/Screenshot_20230217_235310.png)
 - [Plant Detail](https://github.com/ixtliTakeru/hw.CathayBank/blob/master/screenshots/Screenshot_20230217_235323.png)
 
