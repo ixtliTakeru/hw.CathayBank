@@ -7,11 +7,11 @@
     <ImageView
         android:id="@+id/plantImg"
         android:layout_width="0dp"
-        android:layout_height="240dp"
+        android:layout_height="@dimen/img_height"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="@dimen/margin_10"/>
 
     <TextView
         android:id="@+id/plantDesc"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toBottomOf="@+id/plantImg"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

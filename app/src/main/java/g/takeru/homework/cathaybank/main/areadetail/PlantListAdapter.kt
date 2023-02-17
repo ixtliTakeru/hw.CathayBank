@@ -65,7 +65,7 @@ class PlantListAdapter (private val area: Area?,
             holder.binding.apply {
                 plantImage.load(plant.F_Pic01_URL.toHttps())
                 // Unable to parse F_Name_Ch(Plant api) for Plant class due to encoding issue
-                plantName.text = plant.F_Name_Ch
+                plantName.text = if (plant.F_Name_Ch.isNullOrEmpty()) "Unknown" else plant.F_Name_Ch
                 plantDesc.text = plant.F_AlsoKnown
             }
             holder.itemView.setOnClickListener { holderListener.onItemClicked(position, plant) }
